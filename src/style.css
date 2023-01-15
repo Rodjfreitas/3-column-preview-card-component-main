@@ -6,31 +6,144 @@
 
 body{
   font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
 
 }
 
 main{
-  display: flex;
-  flex-direction: column;
+  display: flex;  
   justify-content: center;
   align-items: center;
+  margin: 50px 20px;
 }
 
 h1{
   font-family: 'Big Shoulders Display', cursive;
+  margin-bottom: 25px;
+  color: hsl(0, 0%, 95%);
+}
+
+.Card p{
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 235px;
+  text-align: left;
 }
 
 #Cards{
-  display: grid;
-  grid-template-columns: max-content;
+  display: grid; 
+  grid-template-areas:
+  'A'
+  'B'
+  'C'
+  'D';  
   
 }
 
 .Card{
-  border: 3px solid black;
+  /*border: 3px solid black;*/
+  padding: 40px 30px;
+  
+}
+
+.one{
+  grid-area: A;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.two{
+  grid-area: B;
+  background-color: hsl(184, 100%, 22%);
+
+}
+
+.three{
+  grid-area: C;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(179, 100%, 13%);
+}
+
+svg{
+  margin-bottom: 25px;
+}
+
+button{
+  background-color: hsl(0, 0%, 95%);
+  font-family: 'Lexend Deca', sans-serif;
+  width: 50%;
+  margin: 20px 0;
+  height: 40px;
+  border-radius: 30px;
+  border: 0;
+}
+
+.one button{  
+  color: hsl(31, 77%, 52%);
+}
+.two button{
+  color: hsl(184, 100%, 22%);
+}
+.three button{
+  color: hsl(179, 100%, 13%);
 }
 
 
+button:hover{
+  cursor: pointer;
+  color: hsl(0, 0%, 95%);
+  border: 3px solid #f2f2f2;
+  
+}
 
-.attribution { font-size: 11px; text-align: center; }
+.one button:hover{
+  background-color: hsl(31, 77%, 52%);;
+}
+.two button:hover{
+  background-color: hsl(184, 100%, 22%);;
+}
+.three button:hover{
+  background-color: hsl(179, 100%, 13%);;
+}
+
+
+.attribution {
+  grid-area: D; 
+  font-size: 11px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+@media screen  and (min-width: 960px){
+  #Cards{ 
+    grid-template-areas:
+    'A B C'
+    'D D D';    
+  }
+
+  .one{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+
+  .three{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  .Card p{
+    width: 200px;
+    margin-bottom: 60px;
+  }
+
+  button{
+    width: 60%;
+  }
+}
