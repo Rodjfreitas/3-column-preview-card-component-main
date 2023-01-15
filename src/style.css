@@ -4,5 +4,33 @@
   box-sizing: border-box;
 }
 
+body{
+  font-family: 'Lexend Deca', sans-serif;
+
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+#Cards{
+  display: grid;
+  grid-template-columns: max-content;
+  
+}
+
+.Card{
+  border: 3px solid black;
+}
+
+
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
