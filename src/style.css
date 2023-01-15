@@ -10,12 +10,15 @@ body{
 
 }
 
-main{
+main{  
   display: flex;  
   justify-content: center;
   align-items: center;
-  margin: 50px 20px;
+  padding: 0;
+  margin: 30px;
+  
 }
+
 
 h1{
   font-family: 'Big Shoulders Display', cursive;
@@ -114,8 +117,12 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
 
 
 
@@ -145,5 +152,20 @@ button:hover{
 
   button{
     width: 60%;
+  }
+
+  #Screen{
+    display: flex;  
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+  }
+
+  main{
+    margin: 0;
+  }
+
+  .attribution{
+    font-size: 13px;
   }
 }
