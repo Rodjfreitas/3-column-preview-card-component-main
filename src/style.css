@@ -42,6 +42,14 @@ h1{
   
 }
 
+#Cards2{
+  display: none;
+  grid-template-areas: 
+  'A'
+  'B';
+  border: 3px solid black;
+}
+
 .Card{
   /*border: 3px solid black;*/
   padding: 40px 30px;
@@ -68,6 +76,38 @@ h1{
   background-color: hsl(179, 100%, 13%);
 }
 
+.Alternative{
+  display: none;   
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(31, 77%, 52%);
+  opacity: 50%;
+
+}
+
+.Alternative2{
+  display: none;   
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(184, 100%, 22%);
+  opacity: 50%;
+
+}
+
+.Alternative2{
+  display: none;   
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(179, 100%, 13%);
+  opacity: 50%;
+
+}
+
+.infoSedan{
+ display: none;
+ grid-area: B;
+}
+
 svg{
   margin-bottom: 25px;
 }
@@ -82,7 +122,7 @@ button{
   border: 0;
 }
 
-.one button{  
+.one button{   
   color: hsl(31, 77%, 52%);
 }
 .two button{
@@ -91,6 +131,8 @@ button{
 .three button{
   color: hsl(179, 100%, 13%);
 }
+
+
 
 
 button:hover{
@@ -123,6 +165,23 @@ button:hover{
 .attribution a { 
   color: hsl(228, 45%, 44%); 
 }
+
+
+/*No Clique */
+
+#Info{
+  display: grid; 
+  grid-template-areas:
+  'E'
+  'F';
+  border: 3px solid black;
+  
+}
+
+
+
+
+
 
 
 
