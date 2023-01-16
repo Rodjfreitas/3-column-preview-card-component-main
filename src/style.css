@@ -36,8 +36,11 @@ h1{
   display: grid; 
   grid-template-areas:
   'A'
+  'A1'
   'B'
+  'B1'
   'C'
+  'C1'
   'D';  
   
 }
@@ -63,10 +66,32 @@ h1{
   background-color: hsl(31, 77%, 52%);
 }
 
+.infoA{
+  display: none;
+  grid-area: A1;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(31, 77%, 52%);
+  opacity: 60%;
+}
+
 .two{
   grid-area: B;
   background-color: hsl(184, 100%, 22%);
 
+}
+
+.infoB{
+  display: none;
+  grid-area: B1;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(184, 100%, 22%);
+  opacity: 60%;
 }
 
 .three{
@@ -74,6 +99,17 @@ h1{
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: hsl(179, 100%, 13%);
+}
+
+.infoC{
+  display: none;
+  grid-area: C1;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: hsl(179, 100%, 13%);
+  opacity: 60%;
 }
 
 
@@ -158,8 +194,8 @@ button:hover{
 @media screen  and (min-width: 960px){
   #Cards{ 
     grid-template-areas:
-    'A B C'
-    'D D D';    
+    'A A1 B B1 C C1'
+    'D D D D D D';    
   }
 
   .one{
