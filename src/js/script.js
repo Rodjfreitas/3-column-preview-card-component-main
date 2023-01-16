@@ -25,13 +25,21 @@ function suvTransition (){
     Green.style.display = 'block';
     cardSedan.style.display = 'none';
     cardLux.style.display = 'none';
+    cardSuv.style.borderTopLeftRadius = '10px';
+    cardSuv.style.borderBottomLeftRadius = '10px';
+    cardSuv.style.borderTopRightRadius = 0;
     suvButton.style.visibility = 'hidden';
+
 }
 
 function luxTransition (){
     GreenIntense.style.display = 'block';
     cardSedan.style.display = 'none';
     cardSuv.style.display = 'none';
+    cardLux.style.borderTopLeftRadius = '10px';
+    cardLux.style.borderBottomLeftRadius = '10px';
+    cardLux.style.borderTopRightRadius = 0;
+    cardLux.style.borderBottomRightRadius = 0;
     luxButton.style.visibility = 'hidden';
 }
 
