@@ -75,7 +75,7 @@ h1{
   border-bottom-right-radius: 10px;
   background-color: hsl(31, 77%, 52%);
   opacity: 60%;
-  transition: all 0.3s ;
+  transition: all 0.3s ease-out;
 }
 
 .two{
@@ -84,7 +84,7 @@ h1{
 
 }
 
-.infoB{
+.infoB{  
   display: none;
   grid-area: B1;
   border-top-left-radius: 0;
@@ -93,7 +93,7 @@ h1{
   border-bottom-right-radius: 10px;
   background-color: hsl(184, 100%, 22%);
   opacity: 60%;
-  transition: all 0.3s ;
+  transition: all 0.3s ease-out;
 }
 
 .three{
@@ -112,7 +112,7 @@ h1{
   border-bottom-right-radius: 10px;
   background-color: hsl(179, 100%, 13%);
   opacity: 60%;
-  transition: all 0.3s ;
+  transition: all 0.3s ease-out;
 }
 
 
@@ -206,6 +206,14 @@ button:hover{
     border-bottom-left-radius: 10px;
     border-top-right-radius: 0;
   }
+
+  .infoA{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+
+  
 
   .three{
     border-top-right-radius: 10px;
